@@ -1,4 +1,4 @@
-# PaletteCSSS
+# PaletteCSS
 
 A stylish CSS palette generator.
 
