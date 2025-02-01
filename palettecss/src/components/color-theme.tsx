@@ -82,16 +82,14 @@ export default function ColorThemeViewer() {
     return Math.floor(Math.random() * (max - min + 1)) + min
   }
 
-  const light_dark = (light: string, dark: string, mode: string) => {
-    return mode === 'light' ? light : dark
-  }
+
 
   const shuffleColors = () => {
     const darkmode = random(0, 1) === 1
     // Generate base colors for the theme
     const primaryHue = random(0, 360)
     const accentHue = (primaryHue + random(30, 60)) % 360 
-    const baseColor = `hsl(${primaryHue}, ${random(60, 80)}%, ${darkmode ? 20 : 80}%)`
+
 
    
     const hslToHex = (h: number, s: number, l: number): string => {
