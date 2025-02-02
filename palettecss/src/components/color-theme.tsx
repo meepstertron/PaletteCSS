@@ -246,19 +246,19 @@ export default function ColorThemeViewer() {
               }} 
               className="shadow-md"
             >
-              <h2 style={{ color: theme.textPrimary }} className="text-2xl font-bold mb-4">
+              <h2 style={{ color: theme.textPrimary }} className={`mb-${2 * Number(theme.margin)} text-2xl font-bold`}>
                 Color Theme Preview
               </h2>
-              <p style={{ color: theme.textSecondary }} className="mb-2">
+              <p style={{ color: theme.textSecondary }} className={`mb-${2 * Number(theme.margin)}`}>
                 This is how your color theme looks in action.
               </p>
               <p style={{ color: theme.textMuted }} className="mb-4">
                 Muted text appears like this.
               </p>
-              <div style={{ backgroundColor: theme.bgSecondary }} className="p-4 rounded">
+              <div style={{ backgroundColor: theme.bgSecondary, borderRadius: theme.borderRadius, padding: Number(theme.padding)*1 + "rem" }} className="p-4 rounded">
                 <p style={{ color: theme.textPrimary }}>This is a secondary background section.</p>
               </div>
-              <div style={{ backgroundColor: theme.bgAccent }} className="mt-4 p-4 rounded">
+              <div style={{ backgroundColor: theme.bgAccent, borderRadius: theme.borderRadius, padding: Number(theme.padding)*1 + "rem"}} className="mt-4 p-4 rounded">
                 <p style={{ color: theme.textPrimary }}>This is an accent background section.</p>
               </div>
               <div className="mt-4">
@@ -274,16 +274,16 @@ export default function ColorThemeViewer() {
               </div>
               <hr style={{ borderColor: theme.dividerColor }} className="my-4" />
               <div className="flex space-x-4">
-                <div style={{ backgroundColor: theme.success }} className="p-2 rounded text-white">
+                <div style={{ backgroundColor: theme.success, borderRadius: theme.borderRadius, padding: Number(theme.padding)*0.5 + "rem" }} className="p-2 rounded text-white">
                   Success
                 </div>
-                <div style={{ backgroundColor: theme.error }} className="p-2 rounded text-white">
+                <div style={{ backgroundColor: theme.error, borderRadius: theme.borderRadius, padding: Number(theme.padding)*0.5 + "rem" }} className="p-2 rounded text-white">
                   Error
                 </div>
-                <div style={{ backgroundColor: theme.warning }} className="p-2 rounded text-white">
+                <div style={{ backgroundColor: theme.warning, borderRadius: theme.borderRadius, padding: Number(theme.padding)*0.5 + "rem" }} className="p-2 rounded text-white">
                   Warning
                 </div>
-                <div style={{ backgroundColor: theme.info }} className="p-2 rounded text-white">
+                <div style={{ backgroundColor: theme.info, borderRadius: theme.borderRadius, padding: Number(theme.padding)*0.5 + "rem" }} className="p-2 rounded text-white">
                   Info
                 </div>
               </div>
