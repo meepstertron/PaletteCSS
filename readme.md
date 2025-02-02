@@ -8,7 +8,7 @@ PaletteCSSS helps people create color palettes for their web projects.
 
 ### Demo
 
-There is a demo availible under https://palette.development.hexagonical.ch
+There is a demo availible under https://color.development.hexagonical.ch
 
 ## Why?
 
